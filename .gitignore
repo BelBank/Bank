@@ -22,6 +22,7 @@ object_script.*.Debug
 *.qbs.user
 *.qbs.user.*
 *.moc
+*.ipch
 moc_*.cpp
 moc_*.h
 qrc_*.cpp
