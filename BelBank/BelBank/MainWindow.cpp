@@ -1,4 +1,5 @@
 #include "MainWindow.h"
+#include "MainWindowAfterLog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -12,7 +13,10 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::on_PB_clicked() {
-
+    MainWindowAfterLog *m = new MainWindowAfterLog();
+	m->show();
+	this->hide();
+	
 }
 
 
