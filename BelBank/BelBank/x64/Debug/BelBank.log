@@ -1,4 +1,4 @@
-﻿  MainWindow.cpp
+﻿  rcc MainWindow.qrc
   MainWindowAfterLog.cpp
-  moc_MainWindowAfterLog.cpp
+  qrc_MainWindow.cpp
   BelBank.vcxproj -> D:\Bank\BelBank\x64\Debug\BelBank.exe
