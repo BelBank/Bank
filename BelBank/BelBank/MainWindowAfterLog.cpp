@@ -12,4 +12,5 @@ MainWindowAfterLog::MainWindowAfterLog(QWidget *parent)
 
 
 MainWindowAfterLog::~MainWindowAfterLog()
-{}
+{
+}
