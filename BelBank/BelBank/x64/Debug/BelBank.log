@@ -1,6 +1,4 @@
 ﻿  MainWindow.cpp
-  main.cpp
-  moc_MainWindow.cpp
-  qrc_MainWindow.cpp
-  LINK : не найден или не выполнена сборка D:\Bank\BelBank\x64\Debug\BelBank.exe при последней инкрементной компоновке; выполняется полная компоновка
+  MainWindowAfterLog.cpp
+  moc_MainWindowAfterLog.cpp
   BelBank.vcxproj -> D:\Bank\BelBank\x64\Debug\BelBank.exe

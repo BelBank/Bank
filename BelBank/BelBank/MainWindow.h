@@ -2,7 +2,6 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
-#include ""
 #include <qpushbutton.h>
 #include <qlineedit.h>
 

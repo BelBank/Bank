@@ -44,6 +44,111 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1" colspan="2">
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
+         <size>
+          <width>1000</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>C:/Users/shchi/Downloads/capture_20220617214014956.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="LE_2">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit#LE_2 {
+    border: 2px solid gray;
+	    border-radius: 3px;
+    padding: 4px;
+    background: rgb(253, 255, 145);
+    selection-background-color: darkgray;
+}
+QLineEdit[echoMode=&quot;2&quot;]#LE_2{
+    lineedit-password-character: 9679;
+}
+QLineEdit#LE_2:selected {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 4px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="LE">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit#LE {
+    border: 2px solid gray;
+	    border-radius: 3px;
+    padding: 4px;
+    background: rgb(253, 255, 145);
+    selection-background-color: darkgray;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="Phone">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>73</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame, QLabel, QToolTip {
+	font: 700 10pt &quot;Segoe UI&quot;;
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 4px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Телефон:</string>
+        </property>
+       </widget>
+      </item>
       <item row="5" column="3">
        <spacer name="horizontalSpacer_2">
         <property name="orientation">
@@ -73,63 +178,6 @@
         </property>
        </spacer>
       </item>
-      <item row="5" column="2">
-       <widget class="QLineEdit" name="LE_2">
-        <property name="styleSheet">
-         <string notr="true">QLineEdit#LE_2 {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 4px;
-    background: rgb(253, 255, 145);
-    selection-background-color: darkgray;
-}
-QLineEdit[echoMode=&quot;2&quot;]#LE_2{
-    lineedit-password-character: 9679;
-}
-QLineEdit#LE_2:selected {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 4px;
-    background: white;
-    selection-background-color: darkgray;
-}</string>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="QLabel" name="Password">
-        <property name="minimumSize">
-         <size>
-          <width>70</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QFrame, QLabel, QToolTip {
-    border: 2px solid gray;
-    border-radius: 4px;
-    padding: 4px;
-    background-image: url(images/welcome.png);
-}</string>
-        </property>
-        <property name="text">
-         <string>Пароль:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="2">
-       <widget class="QLineEdit" name="LE">
-        <property name="styleSheet">
-         <string notr="true">QLineEdit#LE {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 4px;
-    background: rgb(253, 255, 145);
-    selection-background-color: darkgray;
-}</string>
-        </property>
-       </widget>
-      </item>
       <item row="7" column="2">
        <spacer name="verticalSpacer">
         <property name="orientation">
@@ -146,100 +194,55 @@ QLineEdit#LE_2:selected {
         </property>
        </spacer>
       </item>
-      <item row="1" column="1" colspan="2">
-       <widget class="QLabel" name="label">
-        <property name="maximumSize">
-         <size>
-          <width>1000</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>C:/Users/shchi/Downloads/capture_20220617214014956.png</pixmap>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="4" column="1">
-       <widget class="QLabel" name="Phone">
-        <property name="minimumSize">
-         <size>
-          <width>60</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>70</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QFrame, QLabel, QToolTip {
-    border: 2px solid gray;
-    border-radius: 6px;
-    padding: 4px;
-}</string>
-        </property>
-        <property name="text">
-         <string>Телефон:</string>
-        </property>
-       </widget>
-      </item>
       <item row="6" column="1" colspan="2">
        <widget class="QPushButton" name="PB">
         <property name="styleSheet">
          <string notr="true">QPushButton#PB {
     background-color:  rgb(226, 154, 252);
-    border-style: outset;
-    border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
+    border-style: solid;
+    border-width: 3px;
+       border-radius: 3px;
+    border-bottom-color: rgb(170, 0, 255);
+    border-left-color: rgb(170, 0, 255);
     font: bold 14px;
     min-width: 10em;
     padding: 6px;
+}
+QPushButton#PB:hover{
+	background-color: rgb(205, 105, 255);
 }
 QPushButton#PB:pressed {
     background-color: rgb(181, 181, 170);
     border-style: inset;
 }
-QPushButton#PB:selected {
-    background-color: rgb(150, 56, 232);
-    border-style: inset;
-}</string>
+</string>
         </property>
         <property name="text">
          <string>Войти</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <spacer name="verticalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
+      <item row="5" column="1">
+       <widget class="QLabel" name="Password">
+        <property name="minimumSize">
          <size>
-          <width>20</width>
-          <height>40</height>
+          <width>70</width>
+          <height>0</height>
          </size>
         </property>
-       </spacer>
+        <property name="styleSheet">
+         <string notr="true">QFrame, QLabel, QToolTip {
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 4px;
+    background-image: url(images/welcome.png);
+	font: 700 10pt &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Пароль:</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>

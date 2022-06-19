@@ -2,6 +2,7 @@
 
 #include <QMainWindow>
 #include "ui_MainWindowAfterLog.h"
+#include <qtabwidget.h>
 
 class MainWindowAfterLog : public QMainWindow
 {
@@ -12,5 +13,5 @@ public:
 	~MainWindowAfterLog();
 
 private:
-	Ui::MainWindowAfterLogClass ui1;//window for main room of bank///
+	Ui::MainWindowAfterLog ui1;//window for main room of bank///
 };
