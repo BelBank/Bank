@@ -1,4 +1,6 @@
-﻿  moc MainWindow.h
+﻿  uic MainWindowAfterLog.ui
+  moc MainWindow.h
+  moc MainWindowAfterLog.h
   MainWindow.cpp
   MainWindowAfterLog.cpp
   main.cpp
