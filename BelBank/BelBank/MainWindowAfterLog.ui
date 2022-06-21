@@ -522,7 +522,7 @@ background-color: rgb(191, 0, 255);
             </widget>
            </item>
            <item row="2" column="1">
-            <widget class="QLabel" name="label_5">
+            <widget class="QLabel" name="BankCard">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
                <horstretch>0</horstretch>

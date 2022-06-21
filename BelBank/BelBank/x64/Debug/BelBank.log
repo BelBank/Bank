@@ -1,9 +1,4 @@
-﻿  uic MainWindowAfterLog.ui
-  moc MainWindow.h
-  moc MainWindowAfterLog.h
-  MainWindow.cpp
-  MainWindowAfterLog.cpp
+﻿  MainWindow.cpp
   main.cpp
   moc_MainWindow.cpp
-  moc_MainWindowAfterLog.cpp
   BelBank.vcxproj -> D:\Bank\BelBank\x64\Debug\BelBank.exe
