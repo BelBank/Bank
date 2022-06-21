@@ -15,6 +15,7 @@
 #include "MainWindowAfterLog.h"
 #include "MainWindow.h"
 #include <qpixmap.h>
+//#include "main.cpp"
 
 MainWindowAfterLog::MainWindowAfterLog(QWidget *parent)
 	: QMainWindow(parent)
@@ -28,9 +29,9 @@ MainWindowAfterLog::MainWindowAfterLog(QWidget *parent)
 
 void MainWindowAfterLog::on_PB_log_out_clicked()
 {
-	this->close();
-	MainWindow n;
-	n.show();
+	/*this->close();
+	MainWindow *w = new MainWindow();
+	w->show();*/	
 }
 
 MainWindowAfterLog::~MainWindowAfterLog()
