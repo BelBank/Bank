@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/MainWindow">
-		 <file alias="fon.jpg">images/Фон.jpg</file>
-	</qresource>
-</RCC>

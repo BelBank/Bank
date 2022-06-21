@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AleXandR\BSUIR\soci-4.0.3\build\include;C:\Users\AleXandR\BSUIR\soci-4.0.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +119,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AleXandR\BSUIR\soci-4.0.3\build\include;C:\Users\AleXandR\BSUIR\soci-4.0.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,10 +131,15 @@
   <ItemGroup>
     <ClInclude Include="Card.h" />
     <ClInclude Include="Client.h" />
+    <ClInclude Include="db_pool.hpp" />
+    <ClInclude Include="db_pool_1.hpp" />
+    <ClInclude Include="user_info.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Client.cpp" />
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="test.cxx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

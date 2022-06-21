@@ -9,7 +9,7 @@ Client::Client(std::string login, std::string password)
 
 Client::~Client(){}
 
-void Client::addCard(Card new_card)
-{
-	this->cards.push_back(new_card);
-}
+//void Client::addCard(Card new_card)
+//{
+//	this->cards.push_back(new_card);
+//}
