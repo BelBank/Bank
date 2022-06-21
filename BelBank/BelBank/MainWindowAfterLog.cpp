@@ -13,6 +13,7 @@
 
 
 #include "MainWindowAfterLog.h"
+#include "MainWindow.h"
 #include <qpixmap.h>
 
 MainWindowAfterLog::MainWindowAfterLog(QWidget *parent)
@@ -24,6 +25,13 @@ MainWindowAfterLog::MainWindowAfterLog(QWidget *parent)
 	setWindowFlags(Qt::FramelessWindowHint);
 }
 
+
+void MainWindowAfterLog::on_PB_log_out_clicked()
+{
+	this->close();
+	MainWindow n;
+	n.show();
+}
 
 MainWindowAfterLog::~MainWindowAfterLog()
 {

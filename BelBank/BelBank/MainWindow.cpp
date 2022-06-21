@@ -27,11 +27,12 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+
 }
 void MainWindow::on_PB_clicked() {
-    MainWindowAfterLog *m = new MainWindowAfterLog();
-	m->show();
-	this->hide();	
+    MainWindowAfterLog m ;
+	m.show();
+	this->close();
 }
 
 

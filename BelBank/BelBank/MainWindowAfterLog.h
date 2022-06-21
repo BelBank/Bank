@@ -26,6 +26,9 @@ public:
 	MainWindowAfterLog(QWidget *parent = nullptr);
 	~MainWindowAfterLog();
 
+private slots:
+	void on_PB_log_out_clicked();
+
 private:
 	Ui::MainWindowAfterLog ui1;//window for main room of bank///
 };
