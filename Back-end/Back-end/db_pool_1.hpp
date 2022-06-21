@@ -7,7 +7,7 @@
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
 #include <soci/soci.h>
-#include <soci/connection-pool.h>
+#include "soci/postgresql/soci-postgresql.h"
 #pragma GCC diagnostic pop
 
 #include <iostream>
