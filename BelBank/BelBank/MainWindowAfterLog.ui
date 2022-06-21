@@ -87,7 +87,7 @@
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>../../../../../shchi/Downloads/capture_20220619115022581.jpg</pixmap>
+         <pixmap>../../../shchi/Downloads/capture_20220619115022581.jpg</pixmap>
         </property>
        </widget>
       </item>
@@ -253,7 +253,7 @@ color: rgb(226, 154, 252);</string>
          <enum>Qt::LeftToRight</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true">QPushButton#PB {
+         <string notr="true">QPushButton#PB_log_out {
 
 	
 	background-color: rgb(255, 255, 180);
@@ -268,18 +268,18 @@ border-left-color: rgb(255, 255, 127);
     min-width: 10em;
     padding: 6px;
 }
-QPushButton#PB:pressed {
+QPushButton#PB_log_out:pressed {
     
 	background-color: rgb(226, 154, 252);
 
     border-style: solid;
 	border-color: rgb(193, 193, 193);
 }
-QPushButton#PB:selected {
+QPushButton#PB_log_out:selected {
     background-color: rgb(150, 56, 232);
     border-style: inset;
 }
-QPushButton#PB:hover{
+QPushButton#PB_log_out:hover{
  
 	background-color: rgb(255, 255, 0);
 }</string>
@@ -426,13 +426,50 @@ QTabBar::tab:right:selected {
            <rect>
             <x>10</x>
             <y>10</y>
-            <width>761</width>
-            <height>360</height>
+            <width>764</width>
+            <height>341</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_2">
-           <item row="2" column="3">
-            <widget class="QPushButton" name="PB_2">
+           <item row="2" column="2">
+            <widget class="QLabel" name="BankCard">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>350</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>380</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>C:/Users/shchi/Downloads/Golden card (3) (3).png</pixmap>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::NoTextInteraction</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QPushButton" name="PB_next_card">
              <property name="minimumSize">
               <size>
                <width>30</width>
@@ -452,7 +489,7 @@ QTabBar::tab:right:selected {
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton#PB_2 {
+              <string notr="true">QPushButton#PB_next_card {
     background-color:  rgb(226, 154, 252);
     border-style: solid;
     border-width: 3px;
@@ -461,10 +498,10 @@ QTabBar::tab:right:selected {
     border-left-color: rgb(170, 0, 255);
     padding: 6px;
 }
-QPushButton#PB_2:hover{
+QPushButton#PB_next_card:hover{
 	background-color: rgb(205, 105, 255);
 }
-QPushButton#PB_2:pressed {
+QPushButton#PB_next_card:pressed {
     background-color: rgb(191, 0, 255);
     border-style: solid;
 	 border-color:  rgb(226, 154, 252);
@@ -476,8 +513,165 @@ QPushButton#PB_2:pressed {
              </property>
             </widget>
            </item>
+           <item row="2" column="3">
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="LE_card_number">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit#LE_card_number {
+    border: 2px solid gray;
+	    border-radius: 3px;
+    padding: 4px;
+	
+	background-color: rgb(255, 255, 164);
+    selection-background-color: darkgray;
+}</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="LE_card_owner">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit#LE_card_owner {
+    border: 2px solid gray;
+	    border-radius: 3px;
+    padding: 4px;
+	
+	background-color: rgb(255, 255, 164);
+    selection-background-color: darkgray;
+}</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QPushButton" name="PB_get_card_owner">
+               <property name="styleSheet">
+                <string notr="true">QPushButton#PB_get_card_owner {
+    background-color:  rgb(226, 154, 252);
+    border-style: solid;
+    border-width: 3px;
+       border-radius: 7px;
+    border-bottom-color: rgb(170, 0, 255);
+    border-right-color: rgb(170, 0, 255);
+    padding: 6px;
+}
+QPushButton#PB_get_card_owner:hover{
+	background-color: rgb(205, 105, 255);
+}
+QPushButton#PB_get_card_owner:pressed {
+background-color: rgb(191, 0, 255);
+    border-style: solid;
+	border-color:  rgb(226, 154, 252);
+
+}</string>
+               </property>
+               <property name="text">
+                <string>Получить имя владельца</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="PB_get_card_number">
+               <property name="styleSheet">
+                <string notr="true">QPushButton#PB_get_card_number {
+    background-color:  rgb(226, 154, 252);
+    border-style: solid;
+    border-width: 3px;
+       border-radius: 7px;
+    border-bottom-color: rgb(170, 0, 255);
+    border-right-color: rgb(170, 0, 255);
+    padding: 6px;
+}
+QPushButton#PB_get_card_number:hover{
+	background-color: rgb(205, 105, 255);
+}
+QPushButton#PB_get_card_number:pressed {
+background-color: rgb(191, 0, 255);
+    border-style: solid;
+	border-color:  rgb(226, 154, 252);
+
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Получить номер карты</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <spacer name="verticalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="3" column="1">
+              <spacer name="verticalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>50</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="1">
+              <spacer name="verticalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="4">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>55</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
            <item row="2" column="0">
-            <widget class="QPushButton" name="PB_3">
+            <widget class="QPushButton" name="PB_previous_card">
              <property name="minimumSize">
               <size>
                <width>30</width>
@@ -496,7 +690,7 @@ QPushButton#PB_2:pressed {
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton#PB_3 {
+              <string notr="true">QPushButton#PB_previous_card {
     background-color:  rgb(226, 154, 252);
     border-style: solid;
     border-width: 3px;
@@ -505,10 +699,10 @@ QPushButton#PB_2:pressed {
     border-right-color: rgb(170, 0, 255);
     padding: 6px;
 }
-QPushButton#PB_3:hover{
+QPushButton#PB_previous_card:hover{
 	background-color: rgb(205, 105, 255);
 }
-QPushButton#PB_3:pressed {
+QPushButton#PB_previous_card:pressed {
 background-color: rgb(191, 0, 255);
     border-style: solid;
 	border-color:  rgb(226, 154, 252);
@@ -522,37 +716,22 @@ background-color: rgb(191, 0, 255);
             </widget>
            </item>
            <item row="2" column="1">
-            <widget class="QLabel" name="BankCard">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
              </property>
-             <property name="minimumSize">
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
               <size>
-               <width>300</width>
+               <width>50</width>
                <height>0</height>
               </size>
              </property>
-             <property name="maximumSize">
-              <size>
-               <width>300</width>
-               <height>200</height>
-              </size>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::LeftToRight</enum>
-             </property>
-             <property name="text">
-              <string>TextLabel</string>
-             </property>
-             <property name="textInteractionFlags">
-              <set>Qt::NoTextInteraction</set>
-             </property>
-            </widget>
+            </spacer>
            </item>
-           <item row="0" column="0" colspan="4">
+           <item row="0" column="0" colspan="6">
             <widget class="QLineEdit" name="lineEdit">
              <property name="minimumSize">
               <size>
@@ -579,7 +758,7 @@ border: 4px solid  rgb(226, 154, 252);
 </string>
              </property>
              <property name="text">
-              <string notr="true">Все карты</string>
+              <string notr="true">Все виртуальные карты</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -589,16 +768,119 @@ border: 4px solid  rgb(226, 154, 252);
              </property>
             </widget>
            </item>
-           <item row="2" column="2">
-            <layout class="QGridLayout" name="gridLayout_4">
-             <item row="0" column="0">
-              <widget class="QPushButton" name="pushButton">
-               <property name="text">
-                <string>PushButton</string>
-               </property>
-              </widget>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="gridLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>779</x>
+            <y>9</y>
+            <width>471</width>
+            <height>341</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 155);
+border-radius: 10px;
+border: 4px solid  rgb(226, 154, 252);</string>
+             </property>
+             <property name="text">
+              <string>Оформление новой виртуальной  карты</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QRadioButton" name="radioButton_5">
+                 <property name="text">
+                  <string>RadioButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="radioButton_4">
+                 <property name="text">
+                  <string>RadioButton</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string/>
+             </property>
+             <widget class="QWidget" name="verticalLayoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>231</width>
+                <height>271</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QRadioButton" name="radioButton_3">
+                 <property name="text">
+                  <string>RadioButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="radioButton_2">
+                 <property name="text">
+                  <string>RadioButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="radioButton">
+                 <property name="text">
+                  <string>RadioButton</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
            </item>
           </layout>
          </widget>

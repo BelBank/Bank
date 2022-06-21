@@ -30,9 +30,9 @@ MainWindow::~MainWindow()
 
 }
 void MainWindow::on_PB_clicked() {
-    MainWindowAfterLog m ;
-	m.show();
+    MainWindowAfterLog *m = new MainWindowAfterLog();
 	this->close();
+	m->show();
 }
 
 
