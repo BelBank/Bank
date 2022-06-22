@@ -37,3 +37,4 @@ void MainWindowAfterLog::on_PB_log_out_clicked()
 MainWindowAfterLog::~MainWindowAfterLog()
 {
 }
+
