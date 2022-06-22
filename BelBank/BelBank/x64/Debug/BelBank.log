@@ -1,6 +1,6 @@
-﻿  MainWindow.cpp
+﻿  Card.cpp
+  Client.cpp
+  MainWindow.cpp
   MainWindowAfterLog.cpp
-  main.cpp
-  moc_MainWindow.cpp
   moc_MainWindowAfterLog.cpp
   BelBank.vcxproj -> D:\Bank\BelBank\x64\Debug\BelBank.exe

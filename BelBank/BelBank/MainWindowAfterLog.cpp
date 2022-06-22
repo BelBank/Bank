@@ -24,6 +24,7 @@ MainWindowAfterLog::MainWindowAfterLog(QWidget *parent)
 	setWindowFlags(Qt::WindowMinimizeButtonHint | Qt::Dialog);
 	setAttribute(Qt::WA_TranslucentBackground, true);
 	setWindowFlags(Qt::FramelessWindowHint);
+	ui1.LE_password_to_create_new_card->setEchoMode(QLineEdit::Password);
 }
 
 
@@ -31,9 +32,8 @@ void MainWindowAfterLog::on_PB_log_out_clicked()
 {
 	/*this->close();
 	MainWindow *w = new MainWindow();
-	w->show();*/	
+	w->show();*/
 }
-
 MainWindowAfterLog::~MainWindowAfterLog()
 {
 }
