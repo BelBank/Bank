@@ -16,6 +16,8 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
+#include "Client.h"
+#include "qmessagebox.h"
 #include <qpushbutton.h>
 #include <qlineedit.h>
 #include <qradiobutton.h>
@@ -30,8 +32,11 @@ public:
 private slots:
 	
     void on_PB_clicked();
+
+    //void on_PB_sign_in_clicked();
 	
 
 private:
+    db_pool database;
     Ui::MainWindow ui; ///log window///
 };

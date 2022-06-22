@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
-	ui.LE_2->setEchoMode(QLineEdit::Password);
+	ui.LE_password->setEchoMode(QLineEdit::Password);
 	setWindowFlags(Qt::WindowMinimizeButtonHint | Qt::Dialog);
 	setAttribute(Qt::WA_TranslucentBackground, true);
 	setWindowFlags(Qt::FramelessWindowHint);
@@ -29,10 +29,35 @@ MainWindow::~MainWindow()
 {
 
 }
-void MainWindow::on_PB_clicked() {
-    MainWindowAfterLog *m = new MainWindowAfterLog();
-	this->close();
-	m->show();
+//void MainWindow::on_PB_clicked() {
+////    MainWindowAfterLog *m = new MainWindowAfterLog();
+////	this->close();
+////	m->show();
+////}
+
+
+void MainWindow::on_PB_clicked()
+{
+	if (database.connect("postgresql://host='postgresql-81012-0.cloudclusters.net' port='12018' dbname='bank' user='root' password='drakonkapusta'"))
+	{
+		QString login = ui.LE_login->text();
+		QString password = ui.LE_password->text();
+		soci::session sql(*database.get_pool());
+		soci::indicator ind;
+		Client info;
+		sql << "SELECT * FROM bank_login WHERE login = :login AND password = :password", soci::use(login.toStdString(), "login"), soci::use(password.toStdString(), "password"), soci::into(info, ind);
+		if (info.login == "" && info.password == "")
+		{
+			QMessageBox::warning(this, "Error", "Wrong login or password!");
+		}
+		else
+		{
+			MainWindowAfterLog* m = new MainWindowAfterLog();
+			this->close();
+			m->show();
+		}
+	}
+	
 }
 
 

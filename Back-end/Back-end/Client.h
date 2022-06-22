@@ -55,7 +55,7 @@ namespace soci {
         static void from_base(values const& v, indicator ind, Client& p) {
             if (ind == i_null) return;
             try {
-                p.id = v.get<int>("id", 0);
+                p.id = v.get<int>("id",  0);
                 p.login = v.get<std::string>("login", {});
                 p.password = v.get<std::string>("password", {});
             }
