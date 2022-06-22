@@ -24,9 +24,6 @@
     <ClInclude Include="db_pool.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="db_pool_1.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="user_info.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
