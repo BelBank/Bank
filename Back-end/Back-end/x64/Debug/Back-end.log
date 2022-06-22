@@ -1,10 +1,6 @@
 ﻿  test.cxx
-C:\Users\AleXandR\BSUIR\Bank\Back-end\Back-end\db_pool_1.hpp(6,9): warning C4068: неизвестная прагма "GCC"
-C:\Users\AleXandR\BSUIR\Bank\Back-end\Back-end\db_pool_1.hpp(7,9): warning C4068: неизвестная прагма "GCC"
-C:\Users\AleXandR\BSUIR\Bank\Back-end\Back-end\db_pool_1.hpp(8,9): warning C4068: неизвестная прагма "GCC"
-C:\Users\AleXandR\BSUIR\Bank\Back-end\Back-end\db_pool_1.hpp(11,9): warning C4068: неизвестная прагма "GCC"
-x64\Debug\test.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
-Test.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __cdecl soci::connection_pool::~connection_pool(void)" (??1connection_pool@soci@@QEAA@XZ) в функции "public: void * __cdecl soci::connection_pool::`scalar deleting destructor'(unsigned int)" (??_Gconnection_pool@soci@@QEAAPEAXI@Z).
-Test.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: class soci::session & __cdecl soci::connection_pool::at(unsigned __int64)" (?at@connection_pool@soci@@QEAAAEAVsession@2@_K@Z) в функции "public: void __cdecl db_pool::close(void)" (?close@db_pool@@QEAAXXZ).
-Test.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __cdecl soci::session::close(void)" (?close@session@soci@@QEAAXXZ) в функции "public: void __cdecl db_pool::close(void)" (?close@db_pool@@QEAAXXZ).
-C:\Users\AleXandR\BSUIR\Bank\Back-end\x64\Debug\Back-end.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
+x64\Debug\test.obj : warning LNK4042: object specified more than once; extras ignored
+  Back-end.vcxproj -> C:\Users\AleXandR\BSUIR\Bank\Back-end\x64\Debug\Back-end.exe
+  C:\Users\AleXandR\BSUIR\Bank\Back-end\Back-end
+  ╤ъюяшЁютрэю Їрщыют: 0.
+  ╤ъюяшЁютрэю Їрщыют: 0.

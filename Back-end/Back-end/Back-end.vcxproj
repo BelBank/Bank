@@ -104,12 +104,21 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci-4.0.3\build\include;C:\Users\AleXandR\BSUIR\soci-4.0.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci\build\include;C:\Users\AleXandR\BSUIR\soci\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AleXandR\BSUIR\soci\build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>soci_core_4_0.lib;soci_postgresql_4_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
+    <PostBuildEvent>
+      <Command>cd
+xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_core_4_0.dll" "$(OutDir)"
+xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_postgresql_4_0.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -119,20 +128,28 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci-4.0.3\build\include;C:\Users\AleXandR\BSUIR\soci-4.0.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci\build\include;C:\Users\AleXandR\BSUIR\soci\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AleXandR\BSUIR\soci\build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>soci_core_4_0.lib;soci_postgresql_4_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
+    <PostBuildEvent>
+      <Command>cd
+xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_core_4_0.dll" "$(OutDir)"
+xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_postgresql_4_0.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="db_pool.hpp" />
-    <ClInclude Include="db_pool_1.hpp" />
     <ClInclude Include="user_info.hpp" />
   </ItemGroup>
   <ItemGroup>
