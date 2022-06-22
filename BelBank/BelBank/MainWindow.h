@@ -18,6 +18,7 @@
 #include "ui_MainWindow.h"
 #include <qpushbutton.h>
 #include <qlineedit.h>
+#include <qradiobutton.h>
 
 class MainWindow : public QMainWindow
 {

@@ -18,6 +18,7 @@
 #include "ui_MainWindowAfterLog.h"
 #include <qtabwidget.h>
 
+
 class MainWindowAfterLog : public QMainWindow
 {
 	Q_OBJECT
