@@ -1,8 +1,4 @@
-﻿  moc MainWindow.h
-  MainWindow.cpp
-  MainWindowAfterLog.cpp
-  main.cpp
-  moc_MainWindow.cpp
+﻿  MainWindow.cpp
   BelBank.vcxproj -> C:\Users\AleXandR\BSUIR\Bank\BelBank\x64\Debug\BelBank.exe
   C:\Users\AleXandR\BSUIR\Bank\BelBank\BelBank
   ╤ъюяшЁютрэю Їрщыют: 0.

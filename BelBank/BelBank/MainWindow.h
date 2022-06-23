@@ -16,6 +16,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
+#include "ui_Registration.h"
 #include "Back-end/Client.h"
 #include "qmessagebox.h"
 #include <qpushbutton.h>
@@ -32,6 +33,8 @@ public:
 private slots:
 	
     void on_PB_clicked();
+	void on_PB_registration_clicked();
+    void on_PB_sign_up_clicked();
 
     //void on_PB_sign_in_clicked();
 	
@@ -40,6 +43,8 @@ private:
     db_pool database;
     
     Ui::MainWindow ui; ///log window///
+    Ui::Registration ui_sign_up;
+    QMainWindow* window_sign_up;
 };
 
 

@@ -121,6 +121,7 @@ xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_postgresql_4_0.dll" "$(OutDir)"<
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="main.cpp" />
     <QtUic Include="MainWindowAfterLog.ui" />
+    <QtUic Include="Registration.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainWindowAfterLog.h" />

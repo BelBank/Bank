@@ -51,6 +51,9 @@
     <QtUic Include="MainWindowAfterLog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="Registration.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainWindowAfterLog.h">
