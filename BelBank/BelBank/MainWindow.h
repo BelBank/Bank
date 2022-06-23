@@ -16,7 +16,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
-#include "Client.h"
+#include "Back-end/Client.h"
 #include "qmessagebox.h"
 #include <qpushbutton.h>
 #include <qlineedit.h>
@@ -38,5 +38,9 @@ private slots:
 
 private:
     db_pool database;
+    
     Ui::MainWindow ui; ///log window///
 };
+
+
+

@@ -60,7 +60,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci\build\include;C:\Users\AleXandR\BSUIR\soci\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\AleXandR\BSUIR\Bank\Back-end;D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci\build\include;C:\Users\AleXandR\BSUIR\soci\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Users\AleXandR\BSUIR\soci\build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -74,7 +74,7 @@ xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_postgresql_4_0.dll" "$(OutDir)"<
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci\build\include;C:\Users\AleXandR\BSUIR\soci\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\AleXandR\BSUIR\Bank\Back-end;D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci\build\include;C:\Users\AleXandR\BSUIR\soci\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Users\AleXandR\BSUIR\soci\build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -114,7 +114,6 @@ xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_postgresql_4_0.dll" "$(OutDir)"<
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Card.cpp" />
-    <ClCompile Include="Client.cpp" />
     <ClCompile Include="MainWindowAfterLog.cpp" />
     <QtRcc Include="MainWindow.qrc" />
     <QtUic Include="MainWindow.ui" />
@@ -128,8 +127,6 @@ xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_postgresql_4_0.dll" "$(OutDir)"<
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
-    <ClInclude Include="Client.h" />
-    <ClInclude Include="db_pool.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

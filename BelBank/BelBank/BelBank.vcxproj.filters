@@ -46,9 +46,6 @@
     <ClCompile Include="Card.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Client.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="MainWindowAfterLog.ui">
@@ -62,12 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Client.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="db_pool.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
