@@ -7,7 +7,6 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "Card.h"
 #include "db_pool.hpp"
 
 

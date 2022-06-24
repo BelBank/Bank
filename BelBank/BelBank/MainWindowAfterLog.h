@@ -16,6 +16,7 @@
 
 #include <QMainWindow>
 #include "ui_MainWindowAfterLog.h"
+#include "ui_Add_new_card.h"
 #include <qtabwidget.h>
 
 
@@ -29,7 +30,10 @@ public:
 
 private slots:
 	void on_PB_log_out_clicked();
+	void on_PB_new_card_clicked();
 
 private:
 	Ui::MainWindowAfterLog ui1;//window for main room of bank///
+	Ui::New_card_window new_card_ui;
+	QMainWindow *new_card_window;
 };

@@ -17,7 +17,7 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
 #include "ui_Registration.h"
-#include "Back-end/Client.h"
+#include "Client.h"
 #include "qmessagebox.h"
 #include <qpushbutton.h>
 #include <qlineedit.h>

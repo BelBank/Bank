@@ -80,7 +80,8 @@ void MainWindow::on_PB_sign_up_clicked()
 {
 	if (ui_sign_up.LE_new_login->text().isEmpty() ||
 		ui_sign_up.LE_new_password->text().isEmpty() ||
-		ui_sign_up.LE_confirm_password->text().isEmpty())
+		ui_sign_up.LE_confirm_password->text().isEmpty() ||
+		ui_sign_up.LE_name->text().isEmpty())
 	{
 		QMessageBox* message = new QMessageBox(QMessageBox::Warning, "Error", "Fill all fields!");
 		message->setWindowFlag(Qt::WindowStaysOnTopHint);
@@ -99,15 +100,17 @@ void MainWindow::on_PB_sign_up_clicked()
 		try
 		{
 			soci::session sql(*database.get_pool());
+			Client info;
 			std::string login = ui_sign_up.LE_new_login->text().toStdString();
 			std::string password = ui_sign_up.LE_new_password->text().toStdString();
-			Client info;
+			info.name = ui_sign_up.LE_name->text().toStdString();
 			soci::indicator ind;
 			sql << "SELECT * FROM bank_login WHERE login = :login", soci::into(info, ind), soci::use(login);
 			if (info.login == "")
 			{
 				info.password = info.hash_password(password);
-				sql << "INSERT INTO bank_login (login, password) VALUES (:login, :password)", soci::use(login), soci::use(info.password);
+				sql << "INSERT INTO bank_login (login, password, owner_name) VALUES (:login, :password, :owner_name)", soci::use(login), soci::use(info.password), soci::use(info.name);
+				sql <<"INSERT INTO cards (owner_name) VALUES (:owner_name)", soci::use(info.name);
 				QMessageBox* message = new QMessageBox(QMessageBox::Information, "Success", "You are registered!");
 				message->setWindowFlag(Qt::WindowStaysOnTopHint);
 				message->show();
