@@ -12,6 +12,8 @@
 //    GNU General Public License for more details.
 
 
+
+
 #pragma once
 
 #include <QtWidgets/QMainWindow>
@@ -22,6 +24,9 @@
 #include <qpushbutton.h>
 #include <qlineedit.h>
 #include <qradiobutton.h>
+#include "MainWindowAfterLog.h"
+
+extern db_pool database;
 
 class MainWindow : public QMainWindow
 {
@@ -40,7 +45,6 @@ private slots:
 	
 
 private:
-    db_pool database;
     
     Ui::MainWindow ui; ///log window///
     Ui::Registration ui_sign_up;

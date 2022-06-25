@@ -13,7 +13,7 @@
 
 
 #include "MainWindow.h"
-#include "MainWindowAfterLog.h"
+
 
 
 MainWindow::MainWindow(QWidget* parent)
@@ -63,6 +63,7 @@ void MainWindow::on_PB_clicked()
 		else
 		{
 			MainWindowAfterLog* m = new MainWindowAfterLog();
+			m->save_login = login;
 			this->close();
 			m->show();
 		}

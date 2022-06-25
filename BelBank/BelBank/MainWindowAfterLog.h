@@ -20,11 +20,16 @@
 #include <qtabwidget.h>
 
 
+db_pool database;
+
 class MainWindowAfterLog : public QMainWindow
 {
 	Q_OBJECT
 
 public:
+	
+	std::string save_login;
+	
 	MainWindowAfterLog(QWidget *parent = nullptr);
 	~MainWindowAfterLog();
 
