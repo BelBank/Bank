@@ -51,3 +51,4 @@ void MainWindowAfterLog::on_PB_new_card_clicked()
 MainWindowAfterLog::~MainWindowAfterLog()
 {
 }
+
