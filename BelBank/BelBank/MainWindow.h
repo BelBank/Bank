@@ -12,13 +12,21 @@
 //    GNU General Public License for more details.
 
 
+
+
 #pragma once
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
+#include "ui_Registration.h"
+#include "Client.h"
+#include "qmessagebox.h"
 #include <qpushbutton.h>
 #include <qlineedit.h>
 #include <qradiobutton.h>
+#include "MainWindowAfterLog.h"
+
+extern db_pool database;
 
 class MainWindow : public QMainWindow
 {
@@ -30,8 +38,18 @@ public:
 private slots:
 	
     void on_PB_clicked();
+	void on_PB_registration_clicked();
+    void on_PB_sign_up_clicked();
+
+    //void on_PB_sign_in_clicked();
 	
 
 private:
+    
     Ui::MainWindow ui; ///log window///
+    Ui::Registration ui_sign_up;
+    QMainWindow* window_sign_up;
 };
+
+
+

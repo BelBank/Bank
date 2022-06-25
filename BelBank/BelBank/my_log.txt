@@ -1,0 +1,1 @@
+SELECT * FROM bank_login WHERE login = :login AND password = :password LIMIT 1

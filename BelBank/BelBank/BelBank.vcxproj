@@ -31,12 +31,12 @@
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
-    <QtInstall>6.2.2_msvc2019_64</QtInstall>
+    <QtInstall>6.2.3_msvc2019_64</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
-    <QtInstall>6.2.2_msvc2019_64</QtInstall>
+    <QtInstall>6.2.3_msvc2019_64</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
@@ -58,6 +58,34 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci\build\include;C:\Users\AleXandR\BSUIR\soci\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\AleXandR\BSUIR\soci\build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>soci_core_4_0.lib;soci_postgresql_4_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd
+xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_core_4_0.dll" "$(OutDir)"
+xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_postgresql_4_0.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\PostgreSQL\14\include;C:\Users\AleXandR\BSUIR\soci\build\include;C:\Users\AleXandR\BSUIR\soci\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\AleXandR\BSUIR\soci\build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>soci_core_4_0.lib;soci_postgresql_4_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd
+xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_core_4_0.dll" "$(OutDir)"
+xcopy /y /d "..\..\..\soci\build\bin\Debug\soci_postgresql_4_0.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -93,7 +121,9 @@
     <QtMoc Include="MainWindow.h" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <QtUic Include="Add_new_card.ui" />
     <QtUic Include="MainWindowAfterLog.ui" />
+    <QtUic Include="Registration.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainWindowAfterLog.h" />
@@ -101,6 +131,7 @@
   <ItemGroup>
     <ClInclude Include="Card.h" />
     <ClInclude Include="Client.h" />
+    <ClInclude Include="db_pool.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

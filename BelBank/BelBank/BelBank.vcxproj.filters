@@ -54,6 +54,12 @@
     <QtUic Include="MainWindowAfterLog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="Registration.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Add_new_card.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainWindowAfterLog.h">
@@ -62,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_pool.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Client.h">

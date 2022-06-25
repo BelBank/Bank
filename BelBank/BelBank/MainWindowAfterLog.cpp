@@ -15,12 +15,15 @@
 #include "MainWindowAfterLog.h"
 #include "MainWindow.h"
 #include <qpixmap.h>
-//#include "main.cpp"
 
 MainWindowAfterLog::MainWindowAfterLog(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui1.setupUi(this);
+	new_card_window = new QMainWindow();
+	new_card_ui.setupUi(new_card_window);
+	new_card_window->setWindowFlag(Qt::WindowStaysOnTopHint);
+	new_card_window->setWindowModality(Qt::ApplicationModal);
 	setWindowFlags(Qt::WindowMinimizeButtonHint | Qt::Dialog);
 	setAttribute(Qt::WA_TranslucentBackground, true);
 	setWindowFlags(Qt::FramelessWindowHint);
@@ -34,6 +37,17 @@ void MainWindowAfterLog::on_PB_log_out_clicked()
 	MainWindow *w = new MainWindow();
 	w->show();*/
 }
+
+void MainWindowAfterLog::on_PB_new_card_clicked()
+{
+	std::string passsword = ui1.LE_password_to_create_new_card->text().toStdString();
+	soci::session sql(*database.get_pool());
+	
+	
+	new_card_window->show();
+}
+
+
 MainWindowAfterLog::~MainWindowAfterLog()
 {
 }

@@ -426,7 +426,7 @@ QTabBar::tab:right:selected {
            <rect>
             <x>10</x>
             <y>10</y>
-            <width>1231</width>
+            <width>1298</width>
             <height>527</height>
            </rect>
           </property>
@@ -519,7 +519,7 @@ QLineEdit[echoMode=&quot;2&quot;] {
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_2">
                    <item>
-                    <widget class="QRadioButton" name="radioButton_5">
+                    <widget class="QRadioButton" name="radioButton_Silver">
                      <property name="font">
                       <font>
                        <pointsize>11</pointsize>
@@ -539,7 +539,7 @@ QLineEdit[echoMode=&quot;2&quot;] {
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_4">
+                    <widget class="QRadioButton" name="radioButton_Gold">
                      <property name="font">
                       <font>
                        <pointsize>11</pointsize>
@@ -654,7 +654,7 @@ QPushButton#PB_new_card:pressed {
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout">
                    <item>
-                    <widget class="QRadioButton" name="radioButton_3">
+                    <widget class="QRadioButton" name="radioButton_MC">
                      <property name="font">
                       <font>
                        <pointsize>11</pointsize>
@@ -675,7 +675,7 @@ QPushButton#PB_new_card:pressed {
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_2">
+                    <widget class="QRadioButton" name="radioButton_VISA">
                      <property name="font">
                       <font>
                        <pointsize>11</pointsize>
@@ -694,7 +694,7 @@ QPushButton#PB_new_card:pressed {
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton">
+                    <widget class="QRadioButton" name="radioButton_MIR">
                      <property name="font">
                       <font>
                        <pointsize>11</pointsize>

@@ -1,8 +1,8 @@
 #include "Card.h"
 
 
-Card::Card(std::string card_number, long double balance, int pin, int validity, int CVV_code)
-	: card_number(card_number), balance(balance), pin(pin), validity(validity), CVV_code(CVV_code)
+Card::Card(std::string card_number, long double balance, std::string pin, int CVV_code)
+	: card_number(card_number), balance(balance), pin(pin), CVV_code(CVV_code)
 {
 	if (card_number[0] == '4')
 	{
@@ -14,11 +14,7 @@ Card::Card(std::string card_number, long double balance, int pin, int validity, 
 	}
 	else if (card_number[0] == '3')
 	{
-		payment_system = "Mir";
-	}
-	else
-	{
-		payment_system = "OPS"; // Own Payment System
+		payment_system = "MIR";
 	}
 }
 
@@ -31,7 +27,7 @@ std::string Card::getCardNumber() const {
 long long Card::getBalance() const {
 	return balance;
 }
-long double Card::makePayment(int pin, long double amount)
+long double Card::makePayment(std::string pin, long double amount)
 {
 	if (this->pin != pin)
 	{
@@ -47,7 +43,7 @@ long double Card::makePayment(int pin, long double amount)
 	return balance;
 }
 
-long double Card::moneyTransfer(long double amount, Card other_card, int pin)
+long double Card::moneyTransfer(long double amount, Card other_card, std::string pin)
 {
 	if (this->pin != pin)
 	{
