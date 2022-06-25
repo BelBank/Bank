@@ -32,6 +32,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_PB_clicked() {
     MainWindowAfterLog *m = new MainWindowAfterLog();
 	this->close();
+	QStyle::StandardPixmap::
 	m->show();
 }
 
