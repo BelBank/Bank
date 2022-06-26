@@ -12,6 +12,11 @@
 //    GNU General Public License for more details.
 
 
+#ifndef Client_h
+#define Client_h
+
+
+
 #pragma once
 #include <string>
 #include <vector>
