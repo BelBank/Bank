@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 ﻿  BelBank.vcxproj -> D:\Bank\BelBank\x64\Debug\BelBank.exe
   D:\Bank\BelBank\BelBank
+=======
+﻿  Card.cpp
+  Client.cpp
+  MainWindow.cpp
+  MainWindowAfterLog.cpp
+  main.cpp
+  moc_MainWindow.cpp
+  moc_MainWindowAfterLog.cpp
+  LINK : C:\Users\AleXandR\BSUIR\Bank\BelBank\x64\Debug\BelBank.exe not found or not built by the last incremental link; performing full link
+  BelBank.vcxproj -> C:\Users\AleXandR\BSUIR\Bank\BelBank\x64\Debug\BelBank.exe
+  C:\Users\AleXandR\BSUIR\Bank\BelBank\BelBank
+>>>>>>> branch_for_fix
   ╤ъюяшЁютрэю Їрщыют: 0.
   ╤ъюяшЁютрэю Їрщыют: 0.

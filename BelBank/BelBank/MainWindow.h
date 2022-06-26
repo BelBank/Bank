@@ -26,6 +26,8 @@
 #include <qradiobutton.h>
 #include "MainWindowAfterLog.h"
 
+
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
