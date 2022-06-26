@@ -20,7 +20,7 @@
 #include <qtabwidget.h>
 
 
-db_pool database;
+//db_pool database;
 
 class MainWindowAfterLog : public QMainWindow
 {

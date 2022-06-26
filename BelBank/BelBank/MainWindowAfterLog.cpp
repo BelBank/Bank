@@ -41,7 +41,7 @@ void MainWindowAfterLog::on_PB_log_out_clicked()
 void MainWindowAfterLog::on_PB_new_card_clicked()
 {
 	std::string passsword = ui1.LE_password_to_create_new_card->text().toStdString();
-	soci::session sql(*database.get_pool());
+	//soci::session sql(*database.get_pool());
 	
 	
 	new_card_window->show();

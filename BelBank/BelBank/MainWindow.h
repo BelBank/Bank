@@ -26,8 +26,6 @@
 #include <qradiobutton.h>
 #include "MainWindowAfterLog.h"
 
-extern db_pool database;
-
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -49,6 +47,7 @@ private:
     Ui::MainWindow ui; ///log window///
     Ui::Registration ui_sign_up;
     QMainWindow* window_sign_up;
+    db_pool database;
 };
 
 
