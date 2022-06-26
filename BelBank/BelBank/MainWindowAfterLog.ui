@@ -56,76 +56,6 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="1">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>720</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="4">
-       <widget class="QPushButton" name="PB_log_out">
-        <property name="minimumSize">
-         <size>
-          <width>210</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>200</width>
-          <height>70</height>
-         </size>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton#PB_log_out {
-
-	
-	background-color: rgb(255, 255, 180);
-    border-style: solid;
-    border-width: 4px;
-       border-radius: 3px;
-   
-	
-	border-bottom-color: rgb(255, 255, 127);
-border-left-color: rgb(255, 255, 127);
-    font: bold 14px;
-    min-width: 10em;
-    padding: 6px;
-}
-QPushButton#PB_log_out:pressed {
-    
-	background-color: rgb(226, 154, 252);
-
-    border-style: solid;
-	border-color: rgb(193, 193, 193);
-}
-QPushButton#PB_log_out:selected {
-    background-color: rgb(150, 56, 232);
-    border-style: inset;
-}
-QPushButton#PB_log_out:hover{
- 
-	background-color: rgb(255, 255, 0);
-}</string>
-        </property>
-        <property name="text">
-         <string>Выход</string>
-        </property>
-       </widget>
-      </item>
       <item row="0" column="2">
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="1" column="1" rowspan="2">
@@ -254,6 +184,22 @@ color: rgb(226, 154, 252);</string>
         </item>
        </layout>
       </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>720</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
       <item row="0" column="0">
        <widget class="QLabel" name="label">
         <property name="maximumSize">
@@ -288,6 +234,60 @@ color: rgb(226, 154, 252);</string>
          </size>
         </property>
        </spacer>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="PB_log_out">
+        <property name="minimumSize">
+         <size>
+          <width>210</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#PB_log_out {
+
+	
+	background-color: rgb(255, 255, 180);
+    border-style: solid;
+    border-width: 4px;
+       border-radius: 3px;
+   
+	
+	border-bottom-color: rgb(255, 255, 127);
+border-left-color: rgb(255, 255, 127);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}
+QPushButton#PB_log_out:pressed {
+    
+	background-color: rgb(226, 154, 252);
+
+    border-style: solid;
+	border-color: rgb(193, 193, 193);
+}
+QPushButton#PB_log_out:selected {
+    background-color: rgb(150, 56, 232);
+    border-style: inset;
+}
+QPushButton#PB_log_out:hover{
+ 
+	background-color: rgb(255, 255, 0);
+}</string>
+        </property>
+        <property name="text">
+         <string>Выход</string>
+        </property>
+       </widget>
       </item>
       <item row="1" column="0" colspan="5">
        <widget class="QTabWidget" name="tabWidget">
@@ -426,8 +426,8 @@ QTabBar::tab:right:selected {
            <rect>
             <x>10</x>
             <y>10</y>
-            <width>1298</width>
-            <height>527</height>
+            <width>1253</width>
+            <height>543</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_11">
@@ -435,8 +435,30 @@ QTabBar::tab:right:selected {
             <layout class="QGridLayout" name="gridLayout_6">
              <item row="0" column="1">
               <layout class="QGridLayout" name="gridLayout_5">
+               <item row="2" column="2">
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>30</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
                <item row="3" column="0" colspan="5">
                 <widget class="QLineEdit" name="LE_password_to_create_new_card">
+                 <property name="maximumSize">
+                  <size>
+                   <width>480</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
                    <pointsize>11</pointsize>
@@ -469,33 +491,53 @@ QLineEdit[echoMode=&quot;2&quot;] {
                  </property>
                 </widget>
                </item>
-               <item row="2" column="0">
-                <spacer name="horizontalSpacer_8">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Fixed</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
+               <item row="0" column="0" colspan="5">
+                <widget class="QLineEdit" name="lineEdit_2">
+                 <property name="minimumSize">
                   <size>
-                   <width>40</width>
-                   <height>20</height>
+                   <width>0</width>
+                   <height>30</height>
                   </size>
                  </property>
-                </spacer>
+                 <property name="maximumSize">
+                  <size>
+                   <width>480</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 155);
+border-radius: 10px;
+border: 4px solid  rgb(226, 154, 252);</string>
+                 </property>
+                 <property name="text">
+                  <string>Оформление новой виртуальной  карты</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
                </item>
                <item row="2" column="3">
                 <widget class="QGroupBox" name="groupBox_2">
                  <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>150</width>
                    <height>300</height>
                   </size>
                  </property>
@@ -564,6 +606,12 @@ QLineEdit[echoMode=&quot;2&quot;] {
                </item>
                <item row="4" column="0" colspan="5">
                 <widget class="QPushButton" name="PB_new_card">
+                 <property name="maximumSize">
+                  <size>
+                   <width>480</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
                    <pointsize>12</pointsize>
@@ -594,6 +642,22 @@ QPushButton#PB_new_card:pressed {
                   <string>Создать новую карту</string>
                  </property>
                 </widget>
+               </item>
+               <item row="2" column="4">
+                <spacer name="horizontalSpacer_7">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>25</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
                </item>
                <item row="1" column="1">
                 <spacer name="verticalSpacer">
@@ -717,8 +781,8 @@ color: rgb(0, 255, 0);</string>
                  </widget>
                 </widget>
                </item>
-               <item row="2" column="2">
-                <spacer name="horizontalSpacer_6">
+               <item row="2" column="0">
+                <spacer name="horizontalSpacer_8">
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
                  </property>
@@ -727,59 +791,7 @@ color: rgb(0, 255, 0);</string>
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item row="0" column="0" colspan="5">
-                <widget class="QLineEdit" name="lineEdit_2">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>13</pointsize>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 155);
-border-radius: 10px;
-border: 4px solid  rgb(226, 154, 252);</string>
-                 </property>
-                 <property name="text">
-                  <string>Оформление новой виртуальной  карты</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="readOnly">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="4">
-                <spacer name="horizontalSpacer_7">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Preferred</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
+                   <width>20</width>
                    <height>20</height>
                   </size>
                  </property>
@@ -850,13 +862,13 @@ QPushButton#PB_next_card:pressed {
                  </property>
                  <property name="minimumSize">
                   <size>
-                   <width>350</width>
+                   <width>310</width>
                    <height>200</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>380</width>
+                   <width>310</width>
                    <height>200</height>
                   </size>
                  </property>
@@ -1066,7 +1078,7 @@ background-color: rgb(191, 0, 255);
                     <set>Qt::AlignCenter</set>
                    </property>
                    <property name="readOnly">
-                    <bool>false</bool>
+                    <bool>true</bool>
                    </property>
                   </widget>
                  </item>
@@ -1180,40 +1192,8 @@ background-color: rgb(191, 0, 255);
             <layout class="QGridLayout" name="gridLayout_8">
              <item row="0" column="0">
               <layout class="QGridLayout" name="gridLayout_7">
-               <item row="6" column="2">
-                <widget class="QLineEdit" name="lineEdit_5">
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit {
-    border: 2px solid gray;
-	    border-radius: 3px;
-	
-	background-color: rgb(255, 255, 164);
-    selection-background-color: darkgray;
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>1 EUR                             2.63                            2.8</string>
-                 </property>
-                 <property name="readOnly">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="7" column="1">
-                <spacer name="verticalSpacer_8">
-                 <property name="orientation">
-                  <enum>Qt::Vertical</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item row="3" column="1">
-                <spacer name="verticalSpacer_10">
+               <item row="1" column="1">
+                <spacer name="verticalSpacer_11">
                  <property name="orientation">
                   <enum>Qt::Vertical</enum>
                  </property>
@@ -1250,23 +1230,19 @@ border: 4px solid  rgb(226, 154, 252);
                  </property>
                 </widget>
                </item>
-               <item row="6" column="1">
-                <widget class="QLabel" name="label_6">
+               <item row="2" column="1" colspan="2">
+                <widget class="QLabel" name="label_8">
+                 <property name="font">
+                  <font>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-left-color: rgb(215, 135, 255);
+border-right-color: rgb(215, 135, 255);</string>
+                 </property>
                  <property name="text">
-                  <string/>
-                 </property>
-                 <property name="pixmap">
-                  <pixmap>images/EURO.png</pixmap>
-                 </property>
-                </widget>
-               </item>
-               <item row="8" column="1">
-                <widget class="QLabel" name="label_7">
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="pixmap">
-                  <pixmap>images/RUB.png</pixmap>
+                  <string>С 24 февраля 2022               Покупка                  Продажа</string>
                  </property>
                 </widget>
                </item>
@@ -1289,48 +1265,6 @@ border: 4px solid  rgb(226, 154, 252);
                  </property>
                 </widget>
                </item>
-               <item row="4" column="1">
-                <widget class="QLabel" name="label_5">
-                 <property name="maximumSize">
-                  <size>
-                   <width>30</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="pixmap">
-                  <pixmap>images/USD.png</pixmap>
-                 </property>
-                </widget>
-               </item>
-               <item row="9" column="1">
-                <spacer name="verticalSpacer_7">
-                 <property name="orientation">
-                  <enum>Qt::Vertical</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item row="1" column="1">
-                <spacer name="verticalSpacer_11">
-                 <property name="orientation">
-                  <enum>Qt::Vertical</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
                <item row="4" column="2">
                 <widget class="QLineEdit" name="lineEdit_4">
                  <property name="styleSheet">
@@ -1350,20 +1284,63 @@ border: 4px solid  rgb(226, 154, 252);
                  </property>
                 </widget>
                </item>
-               <item row="2" column="1" colspan="2">
-                <widget class="QLabel" name="label_8">
-                 <property name="font">
-                  <font>
-                   <bold>true</bold>
-                  </font>
+               <item row="9" column="1">
+                <spacer name="verticalSpacer_7">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
                  </property>
-                 <property name="text">
-                  <string>С 24 февраля 2022               Покупка                  Продажа</string>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
                  </property>
-                </widget>
+                </spacer>
                </item>
                <item row="5" column="1">
                 <spacer name="verticalSpacer_9">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLabel" name="label_5">
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/USD.png</pixmap>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="1">
+                <spacer name="verticalSpacer_8">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="3" column="1">
+                <spacer name="verticalSpacer_10">
                  <property name="orientation">
                   <enum>Qt::Vertical</enum>
                  </property>
@@ -1391,6 +1368,45 @@ border: 4px solid  rgb(226, 154, 252);
                  </property>
                 </spacer>
                </item>
+               <item row="8" column="1">
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/RUB.png</pixmap>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/EURO.png</pixmap>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="2">
+                <widget class="QLineEdit" name="lineEdit_5">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    border: 2px solid gray;
+	    border-radius: 3px;
+	
+	background-color: rgb(255, 255, 164);
+    selection-background-color: darkgray;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>1 EUR                             2.63                            2.8</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
               </layout>
              </item>
              <item row="0" column="1">
@@ -1417,8 +1433,1041 @@ border: 4px solid  rgb(226, 154, 252);
         </widget>
         <widget class="QWidget" name="tab_2">
          <attribute name="title">
-          <string>Платежи</string>
+          <string>Платежи и переводы</string>
          </attribute>
+         <widget class="QTreeWidget" name="treeWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>361</width>
+            <height>511</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="cursor" stdset="0">
+           <cursorShape>CrossCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(170, 0, 255);
+selection-background-color: rgb(170, 170, 255);
+background-color: rgb(255, 255, 155);
+border-radius: 3px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::VLine</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <attribute name="headerCascadingSectionResizes">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="headerMinimumSectionSize">
+           <number>32</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Система &quot;Расчет&quot;(ЕРИП)</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+           <property name="background">
+            <color>
+             <red>135</red>
+             <green>135</green>
+             <blue>135</blue>
+            </color>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>Банковские, финансовые услуги</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Банки, НКФО</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Альфа-Банк</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Погашение кредита</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение счета</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Банк Бел-Вэб</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Погашение кредита</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение безотзывного вклада</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение счета</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Белгазпромбанк</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Погашение кредита</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение вклада</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение карточки</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение текущего счета</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Белинвестбанк</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Погашение кредита полное</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Погашение кредита частичное</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение счета</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>МТБанк</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Погашение кредита</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение дебетовой карты</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение вклада</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Приорбанк</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Кредитные карточки</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Погашение кредита</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение платежной карточки</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сбер Банк</string>
+             </property>
+             <property name="background">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>85</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </property>
+             <item>
+              <property name="text">
+               <string>Погашение кредита </string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение депозитов и счетов</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Пополнение счета с картой</string>
+              </property>
+             </item>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Криптобиржи, криптообменники</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Bynex</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Currency.com</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Free2ex.com</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Краудфандинг</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>ulej.by - Белгазпромбанк</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Рынок Форекс</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Альпари - alpari.by</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>БФБ Капитал - bfb.by</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ФТМ Брокерс - ftm.by</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Технобанк - invest.by</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Электронные деньги</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Пополнение QIWI Кошелька</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Пополнение ЮMoney</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Продажа WMB (эл.денег)</string>
+             </property>
+            </item>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>Интернет, телевидение, телефония</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Зарубежные операторы</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>НТВ+ - Банк Решение</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Триколор ТВ - Банк Решение</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>А1</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>А1 - Домашний интернет и ТВ</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Интернет, ТВ</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>А1 - Кабельное ТВ</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Кабельное ТВ</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>А1 - Телесеть</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Абонентская плата</string>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>VOKA</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Услуга VOKA</string>
+              </property>
+             </item>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Белтелеком</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Минск</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Физические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Закрытый телефон</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Разовый платеж</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Реализация товаров</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Телефон</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ТСИС:карт/абон/корпоратив.счет</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Юридические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Бресткая обл.</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Физические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Разовый платеж</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Реализация товаров</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Телефон</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ТСИС:карт/абон/корпоратив.счет</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Юридические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Витебская обл.</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Физические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Разовый платеж</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Реализация товаров</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Телефон</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ТСИС:карт/абон/корпоратив.счет</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Юридические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Гомельская обл.</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Физические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Разовый платеж</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Реализация товаров</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Телефон</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ТСИС:карт/абон/корпоратив.счет</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Юридические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Гродненсккая обл.</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Физические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Разовый платеж</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Реализация товаров</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Телефон</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ТСИС:карт/абон/корпоратив.счет</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Юридические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Минская обл.</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Физические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>МТТС: Разовый платеж</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>МТТС: Реализация товаров</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>МТТС:ZALA, byfly, пакеты услуг</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Разовый платеж</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Реализация товаров</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Телефон</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ТСИС:карт/абон/корпоратив.счет</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Юридические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Могилевская обл.</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Физические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Разовый платеж</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Реализация товаров</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Телефон</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ТСИС:карт/абон/корпоратив.счет</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Юридические лица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>ZALA, byfly, Умный дом, пакеты</string>
+               </property>
+              </item>
+             </item>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>МТС - Домашний интернет</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Космос ТВ</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Хороший Интернет - Unet.by</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>Коммунальные платежи</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Водоснабжение</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Минск</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Минскводоканал</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Промывка водопроводных сетей</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Приемка в эксплуатацию</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Утилизация сточных вод</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Экспертная проверка водомера</string>
+               </property>
+              </item>
+             </item>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Вывоз мусора</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Минск</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Датком Столица</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Вывоз мусора</string>
+               </property>
+              </item>
+             </item>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Газоснабжение</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Минск</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Мингаз</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Газоснабжение</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Прочие услуги</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ТО, ремонт, услуги</string>
+               </property>
+              </item>
+             </item>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Жилищно-коммунальные услуги</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Минск</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Дубай Проперти Менеджмент</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Коммун. платежи АИС Расчет-ЖКУ</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Платно-бытовые услуги</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>ЖЭС ИННАСТ</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Коммун. платежи АИС Расчет-ЖКУ</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>СоколКоммунСервис</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Коммун. платежи АИС Расчет-ЖКУ</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Центр ИТ Мингорисполкома</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Коммун. платежи АИС Расчет-ЖКУ</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Платежи ТС/ЖСПК АИС Расчет-ЖКУ</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Платежи через ЦИТ</string>
+               </property>
+              </item>
+             </item>
+            </item>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>МВД</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>ГАИ</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Водительское удостоверение</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Минск</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Выдача ВУ</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Выдача дубликата ВУ</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Компьютерные услуги</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Оформление заявления</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Практический экзамен на авто</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Практический экзамен на мото</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Предоставление автодрома</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Предоставление ТС для экзамена</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Теоретический экзамен</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Тестирование знаний ПДД</string>
+               </property>
+              </item>
+             </item>
+            </item>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>Образование и развитие</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>РИКЗ</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Репетиционное тестирование</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Централизованное тестирование</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Спорт и физическое развитие</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Центры реабилитации</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Минск</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Спорт Сайнс</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Физкультурно-оздоровит. услуги</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>ЦКРОиР Центрального р-на</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Посещение бассейна</string>
+                </property>
+               </item>
+              </item>
+             </item>
+            </item>
+           </item>
+          </item>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_7">
+          <property name="geometry">
+           <rect>
+            <x>2</x>
+            <y>10</y>
+            <width>381</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 155);
+border-radius: 10px;
+border: 4px solid  rgb(226, 154, 252);</string>
+          </property>
+          <property name="text">
+           <string>Оплата в системе ЕРИП</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
         </widget>
        </widget>
       </item>
