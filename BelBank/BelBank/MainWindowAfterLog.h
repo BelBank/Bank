@@ -20,7 +20,7 @@
 #include <qtabwidget.h>
 
 
-db_pool database;
+//extern db_pool database;
 
 class MainWindowAfterLog : public QMainWindow
 {
@@ -41,4 +41,5 @@ private:
 	Ui::MainWindowAfterLog ui1;//window for main room of bank///
 	Ui::New_card_window new_card_ui;
 	QMainWindow *new_card_window;
+	//db_pool database;
 };

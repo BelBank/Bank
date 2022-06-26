@@ -4,6 +4,7 @@
 #include <soci/soci.h>
 #include "soci/postgresql/soci-postgresql.h"
 
+
 #include <iostream>
 #include <string>
 
