@@ -403,7 +403,7 @@ QTabBar::tab:right:selected {
          <enum>QTabWidget::Rounded</enum>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <property name="iconSize">
          <size>
@@ -426,8 +426,8 @@ QTabBar::tab:right:selected {
            <rect>
             <x>10</x>
             <y>10</y>
-            <width>1253</width>
-            <height>543</height>
+            <width>1241</width>
+            <height>521</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_11">
@@ -435,230 +435,6 @@ QTabBar::tab:right:selected {
             <layout class="QGridLayout" name="gridLayout_6">
              <item row="0" column="1">
               <layout class="QGridLayout" name="gridLayout_5">
-               <item row="2" column="2">
-                <spacer name="horizontalSpacer_6">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Fixed</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>30</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item row="3" column="0" colspan="5">
-                <widget class="QLineEdit" name="LE_password_to_create_new_card">
-                 <property name="maximumSize">
-                  <size>
-                   <width>480</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit{
-	color: rgb(104, 104, 104);
-    border: 4px solid gray;
-	    border-radius: 10px;
-    padding: 4px;
-	
-	background-color: rgb(255, 255, 164);
-    selection-background-color: darkgray;
-}
-
-QLineEdit[echoMode=&quot;2&quot;] {
-    lineedit-password-character: 9679;
-}</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Введите пароль от интернет-банкинга:</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0" colspan="5">
-                <widget class="QLineEdit" name="lineEdit_2">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>480</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>13</pointsize>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 155);
-border-radius: 10px;
-border: 4px solid  rgb(226, 154, 252);</string>
-                 </property>
-                 <property name="text">
-                  <string>Оформление новой виртуальной  карты</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="readOnly">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="3">
-                <widget class="QGroupBox" name="groupBox_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>150</width>
-                   <height>300</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="title">
-                  <string>Выберите тариф:</string>
-                 </property>
-                 <widget class="QWidget" name="verticalLayoutWidget_2">
-                  <property name="geometry">
-                   <rect>
-                    <x>40</x>
-                    <y>29</y>
-                    <width>201</width>
-                    <height>171</height>
-                   </rect>
-                  </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_2">
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_Silver">
-                     <property name="font">
-                      <font>
-                       <pointsize>11</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QRadioButton::indicator {
-    width: 15px;
-    height: 15px;
-}
-
-</string>
-                     </property>
-                     <property name="text">
-                      <string>Silver</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_Gold">
-                     <property name="font">
-                      <font>
-                       <pointsize>11</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QRadioButton::indicator {
-    width: 15px;
-    height: 15px;
-}
-
-</string>
-                     </property>
-                     <property name="text">
-                      <string>Gold</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </widget>
-               </item>
-               <item row="4" column="0" colspan="5">
-                <widget class="QPushButton" name="PB_new_card">
-                 <property name="maximumSize">
-                  <size>
-                   <width>480</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>12</pointsize>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#PB_new_card {
-    background-color:  rgb(226, 154, 252);
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 7px;
-    border-bottom-color: rgb(170, 0, 255);
-    border-left-color: rgb(170, 0, 255);
-    padding: 6px;
-}
-QPushButton#PB_new_card:hover{
-	background-color: rgb(205, 105, 255);
-}
-QPushButton#PB_new_card:pressed {
-    background-color: rgb(191, 0, 255);
-    border-style: solid;
-	 border-color:  rgb(226, 154, 252);
-}
-</string>
-                 </property>
-                 <property name="text">
-                  <string>Создать новую карту</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="4">
-                <spacer name="horizontalSpacer_7">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Fixed</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>25</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
                <item row="1" column="1">
                 <spacer name="verticalSpacer">
                  <property name="orientation">
@@ -671,6 +447,38 @@ QPushButton#PB_new_card:pressed {
                   <size>
                    <width>20</width>
                    <height>10</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="2" column="0">
+                <spacer name="horizontalSpacer_8">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="2" column="2">
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>30</width>
+                   <height>20</height>
                   </size>
                  </property>
                 </spacer>
@@ -781,8 +589,8 @@ color: rgb(0, 255, 0);</string>
                  </widget>
                 </widget>
                </item>
-               <item row="2" column="0">
-                <spacer name="horizontalSpacer_8">
+               <item row="2" column="4">
+                <spacer name="horizontalSpacer_7">
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
                  </property>
@@ -791,18 +599,247 @@ color: rgb(0, 255, 0);</string>
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
-                   <width>20</width>
+                   <width>25</width>
                    <height>20</height>
                   </size>
                  </property>
                 </spacer>
                </item>
+               <item row="0" column="0" colspan="5">
+                <widget class="QLineEdit" name="lineEdit_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>480</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+border-radius: 10px;
+border: 4px solid  rgb(226, 154, 252);</string>
+                 </property>
+                 <property name="text">
+                  <string>Оформление новой виртуальной  карты</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QGroupBox" name="groupBox_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>300</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>Выберите тариф:</string>
+                 </property>
+                 <widget class="QWidget" name="verticalLayoutWidget_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>40</x>
+                    <y>29</y>
+                    <width>201</width>
+                    <height>171</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <item>
+                    <widget class="QRadioButton" name="radioButton_Silver">
+                     <property name="font">
+                      <font>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Silver</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="radioButton_Gold">
+                     <property name="font">
+                      <font>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Gold</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+               <item row="3" column="1" colspan="3">
+                <widget class="QLineEdit" name="LE_password_to_create_new_card">
+                 <property name="maximumSize">
+                  <size>
+                   <width>480</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	color: rgb(104, 104, 104);
+    border: 4px solid gray;
+	    border-radius: 10px;
+    padding: 4px;
+	
+	background-color: rgb(255, 255, 164);
+    selection-background-color: darkgray;
+}
+
+QLineEdit[echoMode=&quot;2&quot;] {
+    lineedit-password-character: 9679;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Введите пароль от интернет-банкинга:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1" colspan="3">
+                <widget class="QPushButton" name="PB_new_card">
+                 <property name="maximumSize">
+                  <size>
+                   <width>480</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#PB_new_card {
+    background-color:  rgb(226, 154, 252);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+    border-bottom-color: rgb(170, 0, 255);
+    border-left-color: rgb(170, 0, 255);
+    padding: 6px;
+}
+QPushButton#PB_new_card:hover{
+	background-color: rgb(205, 105, 255);
+}
+QPushButton#PB_new_card:pressed {
+    background-color: rgb(191, 0, 255);
+    border-style: solid;
+	 border-color:  rgb(226, 154, 252);
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Создать новую карту</string>
+                 </property>
+                </widget>
+               </item>
               </layout>
              </item>
              <item row="0" column="0">
               <layout class="QGridLayout" name="gridLayout_2">
-               <item row="1" column="6">
-                <widget class="QPushButton" name="PB_next_card">
+               <item row="0" column="1" colspan="7">
+                <widget class="QLineEdit" name="lineEdit">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>850</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+border-radius: 10px;
+border: 4px solid  rgb(226, 154, 252);
+</string>
+                 </property>
+                 <property name="text">
+                  <string notr="true">Все виртуальные карты</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QPushButton" name="PB_previous_card">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -812,47 +849,335 @@ color: rgb(0, 255, 0);</string>
                  <property name="minimumSize">
                   <size>
                    <width>30</width>
-                   <height>300</height>
+                   <height>100</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>30</width>
-                   <height>400</height>
+                   <height>200</height>
                   </size>
                  </property>
                  <property name="font">
                   <font>
                    <pointsize>40</pointsize>
-                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">QPushButton#PB_next_card {
+                  <string notr="true">QPushButton#PB_previous_card {
     background-color:  rgb(226, 154, 252);
     border-style: solid;
     border-width: 3px;
-    border-radius: 7px;
+       border-radius: 7px;
     border-bottom-color: rgb(170, 0, 255);
-    border-left-color: rgb(170, 0, 255);
+    border-right-color: rgb(170, 0, 255);
     padding: 6px;
 }
-QPushButton#PB_next_card:hover{
+QPushButton#PB_previous_card:hover{
 	background-color: rgb(205, 105, 255);
 }
-QPushButton#PB_next_card:pressed {
-    background-color: rgb(191, 0, 255);
+QPushButton#PB_previous_card:pressed {
+background-color: rgb(191, 0, 255);
     border-style: solid;
-	 border-color:  rgb(226, 154, 252);
+	border-color:  rgb(226, 154, 252);
+
 }
 </string>
                  </property>
                  <property name="text">
-                  <string>❭</string>
+                  <string>❬</string>
                  </property>
                 </widget>
                </item>
-               <item row="1" column="3">
+               <item row="1" column="7">
+                <spacer name="verticalSpacer_14">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="6" rowspan="3">
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="9" column="2">
+                  <spacer name="verticalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="5" column="3">
+                  <spacer name="horizontalSpacer_11">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="5" column="2">
+                  <spacer name="verticalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Expanding</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="4" column="0">
+                  <spacer name="horizontalSpacer_9">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_11">
+                   <property name="font">
+                    <font>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Номер карты:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <spacer name="verticalSpacer_12">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="7" column="2">
+                  <spacer name="verticalSpacer_13">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLabel" name="label_10">
+                   <property name="font">
+                    <font>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Имя Владельца:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="1" colspan="2">
+                  <widget class="QPushButton" name="PB_get_card_owner">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton#PB_get_card_owner {
+    background-color:  rgb(226, 154, 252);
+    border-style: solid;
+    border-width: 3px;
+       border-radius: 7px;
+    border-bottom-color: rgb(170, 0, 255);
+    border-right-color: rgb(170, 0, 255);
+    padding: 6px;
+}
+QPushButton#PB_get_card_owner:hover{
+	background-color: rgb(205, 105, 255);
+}
+QPushButton#PB_get_card_owner:pressed {
+background-color: rgb(191, 0, 255);
+    border-style: solid;
+	border-color:  rgb(226, 154, 252);
+
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Получить данные о карте</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLineEdit" name="LE_card_number">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit#LE_card_number {
+    border: 2px solid gray;
+	    border-radius: 3px;
+    padding: 4px;
+	
+	background-color: rgb(255, 255, 164);
+    selection-background-color: darkgray;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <spacer name="verticalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>43</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QLabel" name="label_12">
+                   <property name="font">
+                    <font>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Годна до:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QLineEdit" name="LE_card_owner">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit#LE_card_owner {
+    border: 2px solid gray;
+	    border-radius: 3px;
+    padding: 4px;
+	
+	background-color: rgb(255, 255, 164);
+    selection-background-color: darkgray;
+}</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QLineEdit" name="LE_validity">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit#LE_validity {
+    border: 2px solid gray;
+	    border-radius: 3px;
+    padding: 4px;
+	
+	background-color: rgb(255, 255, 164);
+    selection-background-color: darkgray;
+}</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <spacer name="verticalSpacer_16">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="3">
                 <widget class="QLabel" name="BankCard">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
@@ -889,286 +1214,23 @@ QPushButton#PB_next_card:pressed {
                  </property>
                 </widget>
                </item>
-               <item row="1" column="1">
-                <widget class="QPushButton" name="PB_previous_card">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>30</width>
-                   <height>300</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>30</width>
-                   <height>400</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>40</pointsize>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#PB_previous_card {
-    background-color:  rgb(226, 154, 252);
-    border-style: solid;
-    border-width: 3px;
-       border-radius: 7px;
-    border-bottom-color: rgb(170, 0, 255);
-    border-right-color: rgb(170, 0, 255);
-    padding: 6px;
-}
-QPushButton#PB_previous_card:hover{
-	background-color: rgb(205, 105, 255);
-}
-QPushButton#PB_previous_card:pressed {
-background-color: rgb(191, 0, 255);
-    border-style: solid;
-	border-color:  rgb(226, 154, 252);
-
-}
-</string>
-                 </property>
-                 <property name="text">
-                  <string>❬</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="1" colspan="6">
-                <widget class="QLineEdit" name="lineEdit">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>850</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>13</pointsize>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 155);
-border-radius: 10px;
-border: 4px solid  rgb(226, 154, 252);
-</string>
-                 </property>
-                 <property name="text">
-                  <string notr="true">Все виртуальные карты</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="readOnly">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="4">
-                <layout class="QGridLayout" name="gridLayout_4">
-                 <item row="2" column="1">
-                  <widget class="QPushButton" name="PB_get_card_number">
-                   <property name="font">
-                    <font>
-                     <pointsize>12</pointsize>
-                     <bold>true</bold>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton#PB_get_card_number {
-    background-color:  rgb(226, 154, 252);
-    border-style: solid;
-    border-width: 3px;
-       border-radius: 7px;
-    border-bottom-color: rgb(170, 0, 255);
-    border-right-color: rgb(170, 0, 255);
-    padding: 6px;
-}
-QPushButton#PB_get_card_number:hover{
-	background-color: rgb(205, 105, 255);
-}
-QPushButton#PB_get_card_number:pressed {
-background-color: rgb(191, 0, 255);
-    border-style: solid;
-	border-color:  rgb(226, 154, 252);
-
-}
-</string>
-                   </property>
-                   <property name="text">
-                    <string>Получить номер карты</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="5" column="1">
-                  <widget class="QPushButton" name="PB_get_card_owner">
-                   <property name="font">
-                    <font>
-                     <pointsize>12</pointsize>
-                     <bold>true</bold>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton#PB_get_card_owner {
-    background-color:  rgb(226, 154, 252);
-    border-style: solid;
-    border-width: 3px;
-       border-radius: 7px;
-    border-bottom-color: rgb(170, 0, 255);
-    border-right-color: rgb(170, 0, 255);
-    padding: 6px;
-}
-QPushButton#PB_get_card_owner:hover{
-	background-color: rgb(205, 105, 255);
-}
-QPushButton#PB_get_card_owner:pressed {
-background-color: rgb(191, 0, 255);
-    border-style: solid;
-	border-color:  rgb(226, 154, 252);
-
-}</string>
-                   </property>
-                   <property name="text">
-                    <string>Получить имя владельца</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="6" column="1">
-                  <spacer name="verticalSpacer_5">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Fixed</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item row="4" column="1">
-                  <widget class="QLineEdit" name="LE_card_owner">
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit#LE_card_owner {
-    border: 2px solid gray;
-	    border-radius: 3px;
-    padding: 4px;
-	
-	background-color: rgb(255, 255, 164);
-    selection-background-color: darkgray;
-}</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="readOnly">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="1">
-                  <spacer name="verticalSpacer_4">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Fixed</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>50</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="QLineEdit" name="LE_card_number">
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit#LE_card_number {
-    border: 2px solid gray;
-	    border-radius: 3px;
-    padding: 4px;
-	
-	background-color: rgb(255, 255, 164);
-    selection-background-color: darkgray;
-}</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="readOnly">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="1">
-                  <spacer name="verticalSpacer_6">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Fixed</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item row="2" column="0">
-                  <spacer name="horizontalSpacer_9">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Fixed</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                </layout>
-               </item>
-               <item row="1" column="5">
-                <spacer name="horizontalSpacer_5">
+               <item row="3" column="1">
+                <spacer name="verticalSpacer_15">
                  <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
+                  <enum>Qt::Vertical</enum>
                  </property>
                  <property name="sizeType">
                   <enum>QSizePolicy::Fixed</enum>
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
-                   <width>40</width>
-                   <height>20</height>
+                   <width>20</width>
+                   <height>40</height>
                   </size>
                  </property>
                 </spacer>
                </item>
-               <item row="1" column="2">
+               <item row="2" column="2">
                 <spacer name="horizontalSpacer_4">
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
@@ -1178,11 +1240,62 @@ background-color: rgb(191, 0, 255);
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
-                   <width>40</width>
+                   <width>20</width>
                    <height>20</height>
                   </size>
                  </property>
                 </spacer>
+               </item>
+               <item row="2" column="7">
+                <widget class="QPushButton" name="PB_next_card">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>40</pointsize>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#PB_next_card {
+    background-color:  rgb(226, 154, 252);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+    border-bottom-color: rgb(170, 0, 255);
+    border-left-color: rgb(170, 0, 255);
+    padding: 6px;
+}
+QPushButton#PB_next_card:hover{
+	background-color: rgb(205, 105, 255);
+}
+QPushButton#PB_next_card:pressed {
+    background-color: rgb(191, 0, 255);
+    border-style: solid;
+	 border-color:  rgb(226, 154, 252);
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>❭</string>
+                 </property>
+                </widget>
                </item>
               </layout>
              </item>
@@ -1192,6 +1305,22 @@ background-color: rgb(191, 0, 255);
             <layout class="QGridLayout" name="gridLayout_8">
              <item row="0" column="0">
               <layout class="QGridLayout" name="gridLayout_7">
+               <item row="4" column="3">
+                <spacer name="horizontalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>120</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
                <item row="1" column="1">
                 <spacer name="verticalSpacer_11">
                  <property name="orientation">
@@ -1205,8 +1334,61 @@ background-color: rgb(191, 0, 255);
                  </property>
                 </spacer>
                </item>
+               <item row="4" column="2">
+                <widget class="QLineEdit" name="lineEdit_4">
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    border: 2px solid gray;
+	    border-radius: 3px;
+	
+	background-color: rgb(255, 255, 164);
+    selection-background-color: darkgray;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>1 USD                            2.5                             2.63</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1" colspan="2">
+                <widget class="QLabel" name="label_8">
+                 <property name="maximumSize">
+                  <size>
+                   <width>350</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-left-color: rgb(215, 135, 255);
+border-right-color: rgb(215, 135, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>С 24 февраля 2022               Покупка                  Продажа</string>
+                 </property>
+                </widget>
+               </item>
                <item row="0" column="1" colspan="2">
                 <widget class="QLineEdit" name="lineEdit_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>370</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
                    <pointsize>12</pointsize>
@@ -1214,7 +1396,7 @@ background-color: rgb(191, 0, 255);
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 155);
+                  <string notr="true">
 border-radius: 10px;
 border: 4px solid  rgb(226, 154, 252);
 </string>
@@ -1230,24 +1412,24 @@ border: 4px solid  rgb(226, 154, 252);
                  </property>
                 </widget>
                </item>
-               <item row="2" column="1" colspan="2">
-                <widget class="QLabel" name="label_8">
-                 <property name="font">
-                  <font>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">border-left-color: rgb(215, 135, 255);
-border-right-color: rgb(215, 135, 255);</string>
-                 </property>
+               <item row="6" column="1">
+                <widget class="QLabel" name="label_6">
                  <property name="text">
-                  <string>С 24 февраля 2022               Покупка                  Продажа</string>
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/EURO.png</pixmap>
                  </property>
                 </widget>
                </item>
                <item row="8" column="2">
                 <widget class="QLineEdit" name="lineEdit_6">
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit {
     border: 2px solid gray;
@@ -1259,25 +1441,6 @@ border-right-color: rgb(215, 135, 255);</string>
                  </property>
                  <property name="text">
                   <string>100 RUB                        3.7                               4.79</string>
-                 </property>
-                 <property name="readOnly">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="2">
-                <widget class="QLineEdit" name="lineEdit_4">
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit {
-    border: 2px solid gray;
-	    border-radius: 3px;
-	
-	background-color: rgb(255, 255, 164);
-    selection-background-color: darkgray;
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>1 USD                            2.5                             2.63</string>
                  </property>
                  <property name="readOnly">
                   <bool>true</bool>
@@ -1297,8 +1460,8 @@ border-right-color: rgb(215, 135, 255);</string>
                  </property>
                 </spacer>
                </item>
-               <item row="5" column="1">
-                <spacer name="verticalSpacer_9">
+               <item row="7" column="1">
+                <spacer name="verticalSpacer_8">
                  <property name="orientation">
                   <enum>Qt::Vertical</enum>
                  </property>
@@ -1326,8 +1489,8 @@ border-right-color: rgb(215, 135, 255);</string>
                  </property>
                 </widget>
                </item>
-               <item row="7" column="1">
-                <spacer name="verticalSpacer_8">
+               <item row="5" column="1">
+                <spacer name="verticalSpacer_9">
                  <property name="orientation">
                   <enum>Qt::Vertical</enum>
                  </property>
@@ -1352,44 +1515,14 @@ border-right-color: rgb(215, 135, 255);</string>
                  </property>
                 </spacer>
                </item>
-               <item row="4" column="0">
-                <spacer name="horizontalSpacer_10">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Fixed</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>200</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item row="8" column="1">
-                <widget class="QLabel" name="label_7">
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="pixmap">
-                  <pixmap>images/RUB.png</pixmap>
-                 </property>
-                </widget>
-               </item>
-               <item row="6" column="1">
-                <widget class="QLabel" name="label_6">
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="pixmap">
-                  <pixmap>images/EURO.png</pixmap>
-                 </property>
-                </widget>
-               </item>
                <item row="6" column="2">
                 <widget class="QLineEdit" name="lineEdit_5">
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit {
     border: 2px solid gray;
@@ -1406,6 +1539,32 @@ border-right-color: rgb(215, 135, 255);</string>
                   <bool>true</bool>
                  </property>
                 </widget>
+               </item>
+               <item row="8" column="1">
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/RUB.png</pixmap>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <spacer name="horizontalSpacer_10">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
                </item>
               </layout>
              </item>
@@ -1435,7 +1594,7 @@ border-right-color: rgb(215, 135, 255);</string>
          <attribute name="title">
           <string>Платежи и переводы</string>
          </attribute>
-         <widget class="QTreeWidget" name="treeWidget">
+         <widget class="QTreeWidget" name="ERIP_system">
           <property name="geometry">
            <rect>
             <x>10</x>
@@ -1450,7 +1609,7 @@ border-right-color: rgb(215, 135, 255);</string>
            </font>
           </property>
           <property name="cursor" stdset="0">
-           <cursorShape>CrossCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
           </property>
           <property name="mouseTracking">
            <bool>false</bool>
