@@ -60,6 +60,9 @@
     <QtUic Include="Add_new_card.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="ERIP_pay_window.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainWindowAfterLog.h">

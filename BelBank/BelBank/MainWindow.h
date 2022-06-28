@@ -47,7 +47,7 @@ private slots:
 private:
     
     Ui::MainWindow ui; ///log window///
-    Ui::Registration ui_sign_up;
+    Ui::Registration ui_sign_up;//registration window//  
     QMainWindow* window_sign_up;
     db_pool database;
 };

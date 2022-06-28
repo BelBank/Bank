@@ -17,6 +17,7 @@
 #include <QMainWindow>
 #include "ui_MainWindowAfterLog.h"
 #include "ui_Add_new_card.h"
+#include "ui_ERIP_pay_window.h"
 #include <qtabwidget.h>
 
 
@@ -36,10 +37,15 @@ public:
 private slots:
 	void on_PB_log_out_clicked();
 	void on_PB_new_card_clicked();
+	void on_ERIP_itemDoubleClicked(QTreeWidgetItem* item);
+	void on_PB_ERIP_pay_clicked();
 
 private:
 	Ui::MainWindowAfterLog ui1;//window for main room of bank///
 	Ui::New_card_window new_card_ui;
+	Ui::ERIP_pay_window ERIP_ui;
+	//Ui::
 	QMainWindow *new_card_window;
+	QMainWindow *ERIP_payment;
 	//db_pool database;
 };
